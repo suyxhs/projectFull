@@ -1,0 +1,194 @@
+/* AGENT STAFF START */
+
+.title-staff {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  color: #3a3a3b;
+  text-transform: uppercase;
+  max-width: 300px;
+}
+
+.container-staff {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border: 1px solid #dadadb;
+  border-radius: 16px;
+  height: 190px;
+}
+
+.rating-staff {
+  display: flex;
+}
+
+.rating-staff p {
+  font-size: 14px;
+  font-weight: 800;
+  color: #3a3a3b;
+  margin-right: 10px;
+}
+
+.name-comp {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--blue);
+  margin-top: 13px;
+}
+
+.right-staff {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.name-staff h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #3a3a3b;
+  margin-bottom: 5px;
+}
+
+.name-staff p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3a3a3b;
+  margin-bottom: 10px;
+}
+
+.prof-staff {
+  font-size: 12px;
+  font-weight: 400;
+  color: #9c9c9c;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+/* AGENT STAFF END */
+
+/* SEARCH START */
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.box-search {
+  width: 339px;
+  height: 42px;
+  background-color: #fff;
+  border: 1px solid #9ff612;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.box-search > input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.box-search > input::placeholder {
+  font-size: 14px;
+}
+
+/* SEARCH END */
+
+/* SMALL MAP START */
+
+.company-map {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.title-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  color: #000;
+  padding: 0 40px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.content-map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 335px;
+  height: 190px;
+  margin-top: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  object-fit: contain;
+}
+
+/* SMALL MAP END */
+
+/* PAGINATION START */
+
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  padding: 15px 20px;
+}
+
+.pagination ul li {
+  line-height: 50px;
+  margin: 0 5px;
+}
+
+.pagination ul li a {
+  display: block;
+  text-decoration: none;
+  color: #9c9c9c;
+  border-radius: 24px;
+}
+
+.pagination ul li.page {
+  width: 40px;
+  height: 30px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.pagination ul li.page.last {
+  margin-left: 30px;
+}
+
+.pagination ul li.page:hover a,
+.pagination ul li.page:active a {
+  border: 1px solid #dadadb;
+  color: #000;
+}
+
+/* PAGINATION END */
+

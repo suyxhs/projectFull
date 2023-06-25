@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#124bf6" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/src/assets/css/main.css" />
+    <title>Realtor</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar__wrap">
+            <i class="fa-regular fa-bell" id="notify"></i>
+            <div class="logo">
+              <img src="/src/assets/img/Vector.svg" alt="">
+            </div>
+            <ul class="menu" id="menu">
+              <li><a href="#">Главная страница</a></li>
+              <li><a href="#">Риэлторы</a></li>
+              <li><a href="#">Компании</a></li>
+              <li><a href="#">Объекты</a></li>
+            </ul>
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="popup" id="popup"></div>
+    </header>
+    <!-- header end -->
+
+    <main class="main">
+      <!-- card realtor start -->
+      <section class="realtor-section" id="realtor">
+        <div class="container-realtor">
+          <div class="bar-line__left">
+            <img src="/src/assets/img/realtor/Фон формы 2.png" alt="" />
+          </div>
+
+          <div class="bar-line__right">
+            <div class="bar-line__right-text_01">Константинов</div>
+            <div class="bar-line__right-text_02">
+              Константин <br />
+              Константинович
+            </div>
+            <p class="bar-line__right-text_03">
+              Эксперт по загородной недвижимости
+            </p>
+            <div class="bar-line__right-text_04">
+              <div class="rating-company">
+                <p>5.0</p>
+                <div class="stars" data-stars="5">
+                  <svg
+                    height="21"
+                    width="19"
+                    class="star rating"
+                    data-rating="1"
+                  >
+                    <path
+                      d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                      fill="#3A3A3B"
+                    />
+                    <path
+                      d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                      fill="#9FF612"
+                      stroke="#3A3A3B"
+                      stroke-width="0.5"
+                      stroke-linejoin="bevel"
+                    />
+                  </svg>
+                  <svg
+                    height="21"
+                    width="19"
+                    class="star rating"
+                    data-rating="2"
+                  >
+                    <path
+                      d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                      fill="#3A3A3B"
+                    />
+                    <path
+                      d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                      fill="#9FF612"
+                      stroke="#3A3A3B"
+                      stroke-width="0.5"
+                      stroke-linejoin="bevel"
+                    />
+                  </svg>
+                  <svg
+                    height="21"
+                    width="19"
+                    class="star rating"
+                    data-rating="3"
+                  >
+                    <path
+                      d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                      fill="#3A3A3B"
+                    />
+                    <path
+                      d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                      fill="#9FF612"
+                      stroke="#3A3A3B"
+                      stroke-width="0.5"
+                      stroke-linejoin="bevel"
+                    />
+                  </svg>
+                  <svg
+                    height="21"
+                    width="19"
+                    class="star rating"
+                    data-rating="4"
+                  >
+                    <path
+                      d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                      fill="#3A3A3B"
+                    />
+                    <path
+                      d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                      fill="#9FF612"
+                      stroke="#3A3A3B"
+                      stroke-width="0.5"
+                      stroke-linejoin="bevel"
+                    />
+                  </svg>
+                  <svg
+                    height="21"
+                    width="19"
+                    class="star rating"
+                    data-rating="5"
+                  >
+                    <path
+                      d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                      fill="#3A3A3B"
+                    />
+                    <path
+                      d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                      fill="#9FF612"
+                      stroke="#3A3A3B"
+                      stroke-width="0.5"
+                      stroke-linejoin="bevel"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <a class="bar-line__right-text_05" href="#"
+              >Площадь квадратный метр</a
+            >
+          </div>
+        </div>
+        <div class="container-about">
+          <div class="button-container">
+            <div class="button -purpleRealtor center"><p>Коммуналки</p></div>
+            <div class="button -yellow center">
+              <p>Продажа элитной недвижимости</p>
+            </div>
+            <div class="button -black center"><p>Дома премиум класса</p></div>
+          </div>
+          <div class="detail">
+            <p class="deal">345 успешных сделок</p>
+            <a href="#" class="reviews"
+              >48 отзывов <img src="/src/assets/img/realtor/bytesize_plus.svg" alt=""
+            /></a>
+          </div>
+
+          <!-- AWARDS START -->
+          <div class="awards">
+            <p>Награды</p>
+            <div class="list-awards">
+              <ul>
+                <li class="scroll">
+                  <img src="/src/assets/img/realtor/reward.svg" alt="" />
+                </li>
+                <li class="scroll">
+                  <img src="/src/assets/img/realtor/reward.svg" alt="" />
+                </li>
+                <li class="scroll">
+                  <img src="/src/assets/img/realtor/reward.svg" alt="" />
+                </li>
+                <li class="scroll">
+                  <img src="/src/assets/img/realtor/reward.svg" alt="" />
+                </li>
+                <li class="scroll">
+                  <img src="/src/assets/img/realtor/reward.svg" alt="" />
+                </li>
+                <li class="scroll">
+                  <img src="/src/assets/img/realtor/reward.svg" alt="" />
+                </li>
+                <li class="scroll">
+                  <img src="/src/assets/img/realtor/reward.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- AWARDS END -->
+
+          <!-- BUTTON MESSAGE -->
+          <div class="container-btn">
+            <button type="button" class="message">
+              <img src="/src/assets/img/realtor/btnSvg/local_phone.svg" alt="" />
+              Написать
+            </button>
+            <button type="button" class="call">
+              <img src="/src/assets/img/realtor/btnSvg/Frame 1190.svg" alt="" />
+              Заказать звонок
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- card realtor end -->
+
+      <!-- ABOUT REALTOR START -->
+
+      <section class="showcase-object">
+        <div class="container-showcase">
+          <div class="title-showcase">
+            Объекты риэлтора <span>(9 999 999)</span>
+          </div>
+          <div class="checked-btn">
+            <!-- sale btn -->
+            <div class="sale">
+              <input
+                id="light-layout"
+                class="light-layout"
+                type="radio"
+                name="layout"
+                checked
+              />
+              <label
+                for="light-layout"
+                class="layout-buttons settings-box-element"
+                >Продажа</label
+              >
+            </div>
+            <!-- rent btn -->
+            <div class="rent">
+              <input
+                id="dark-layout"
+                class="dark-layout"
+                type="radio"
+                name="layout"
+              />
+              <label
+                for="dark-layout"
+                class="layout-buttons settings-box-element"
+                >Аренда</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="container-object">
+          <div class="scroll-list">
+            <ul>
+              <li class="scroll">
+                <div class="container-slider">
+                  <img src="/src/assets/img/realtor/Фото.png" alt="apart" />
+                  <div class="subtitle-container">
+                    <h3>
+                      Продажа 5-комн. кв. <br />
+                      1231 м², 27/88 эт.
+                    </h3>
+                    <p>
+                      Фестивальная улица, 39, Ленинский <br />
+                      район, Краснодар бла бла бла бла...
+                    </p>
+                  </div>
+                  <div class="price-apart">
+                    <img
+                      src="/src/assets/img/realtor/Иконка _Рост цены_.svg"
+                      alt="arrowUp"
+                    />
+                    <div class="price">
+                      <h3>53 960 000 ₽</h3>
+                      <span>164 000 ₽/м² </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scroll">
+                <div class="container-slider">
+                  <img src="/src/assets/img/realtor/Фото.png" alt="apart" />
+                  <div class="subtitle-container">
+                    <h3>
+                      Продажа 5-комн. кв. <br />
+                      1231 м², 27/88 эт.
+                    </h3>
+                    <p>
+                      Фестивальная улица, 39, Ленинский <br />
+                      район, Краснодар бла бла бла бла...
+                    </p>
+                  </div>
+                  <div class="price-apart">
+                    <img
+                      src="/src/assets/img/realtor/Иконка _Рост цены_.svg"
+                      alt="arrowUp"
+                    />
+                    <div class="price">
+                      <h3>53 960 000 ₽</h3>
+                      <span>164 000 ₽/м² </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scroll">
+                <div class="container-slider">
+                  <img src="/src/assets/img/realtor/Фото.png" alt="apart" />
+                  <div class="subtitle-container">
+                    <h3>
+                      Продажа 5-комн. кв. <br />
+                      1231 м², 27/88 эт.
+                    </h3>
+                    <p>
+                      Фестивальная улица, 39, Ленинский <br />
+                      район, Краснодар бла бла бла бла...
+                    </p>
+                  </div>
+                  <div class="price-apart">
+                    <img
+                      src="/src/assets/img/realtor/Иконка _Рост цены_.svg"
+                      alt="arrowUp"
+                    />
+                    <div class="price">
+                      <h3>53 960 000 ₽</h3>
+                      <span>164 000 ₽/м² </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scroll">
+                <div class="container-slider">
+                  <img src="/src/assets/img/realtor/Фото.png" alt="apart" />
+                  <div class="subtitle-container">
+                    <h3>
+                      Продажа 5-комн. кв. <br />
+                      1231 м², 27/88 эт.
+                    </h3>
+                    <p>
+                      Фестивальная улица, 39, Ленинский <br />
+                      район, Краснодар бла бла бла бла...
+                    </p>
+                  </div>
+                  <div class="price-apart">
+                    <img
+                      src="/src/assets/img/realtor/Иконка _Рост цены_.svg"
+                      alt="arrowUp"
+                    />
+                    <div class="price">
+                      <h3>53 960 000 ₽</h3>
+                      <span>164 000 ₽/м² </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scroll">
+                <div class="container-slider">
+                  <img src="/src/assets/img/realtor/Фото.png" alt="apart" />
+                  <div class="subtitle-container">
+                    <h3>
+                      Продажа 5-комн. кв. <br />
+                      1231 м², 27/88 эт.
+                    </h3>
+                    <p>
+                      Фестивальная улица, 39, Ленинский <br />
+                      район, Краснодар бла бла бла бла...
+                    </p>
+                  </div>
+                  <div class="price-apart">
+                    <img
+                      src="/src/assets/img/realtor/Иконка _Рост цены_.svg"
+                      alt="arrowUp"
+                    />
+                    <div class="price">
+                      <h3>53 960 000 ₽</h3>
+                      <span>164 000 ₽/м² </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="scroll">
+                <div class="more-object">
+                  <img src="/src/assets/img/realtor/Стрелка.png" alt="" />
+                  <button type="button" class="more-info">
+                    <a href="#">Смотреть ещё</a>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT REALTOR END -->
+
+      <!-- Working with a realtor start -->
+      <section class="working-realtor">
+          <h2 class="section-title">Ваша работа с риэлтором</h2>
+          <div class="working-scroll">
+            <ul>
+              <li class="scroll-card">
+                <div class="blue-card">
+                  <div class="title-blue">
+                    Сделка. <br />
+                    Продажа
+                  </div>
+                  <div class="advertisement">Этап: Подготовка к рекламе</div>
+                  <div class="apartment-size">2-к кв. 137 м2.</div>
+                  <div class="location">
+                    Санкт-Петербург, ул. Адмирала <br> Мишустина, д.365к6
+                  </div>
+                  <div class="realtor-info">
+                    <img src="/src/assets/img/realtor/forBanner/realtor.png" alt="" />
+                    <div class="name-realtor">
+                      <p>Ваш риэлтор</p>
+                      <span>Константинов К.К</span>
+                    </div>
+                  </div>
+                  <div class="order-info">
+                    <div class="detail-order">
+                      <p class="application">Заявка №2110/16</p>
+                      <p class="create">создана 24.08.2021</p>
+                    </div>
+                  </div>
+                  <div class="arrow-img">
+                    <img src="/src/assets/img/realtor/forBanner/Стрелка.png" alt="" />
+                  </div>
+                </div>
+              </li>
+
+              <li class="scroll-card">
+                <div class="white-card">
+                  <div class="title-white">
+                    Сделка. <br />
+                    Продажа
+                  </div>
+                  <div class="advertisement-white">Этап: Подготовка к рекламе</div>
+                  <div class="apartment-size-white">2-к кв. 137 м2.</div>
+                  <div class="location-white">
+                    Санкт-Петербург, ул. Адмирала <br> Мишустина, д.365к6
+                  </div>
+                  <div class="realtor-info-white">
+                    <img src="/src/assets/img/realtor/forBanner/realtor.png" alt="" />
+                    <div class="name-realtor-white">
+                      <p>Ваш риэлтор</p>
+                      <span>Константинов К.К</span>
+                    </div>
+                  </div>
+                  <div class="order-info-white">
+                    <div class="detail-order-white">
+                      <p class="application-white">Заявка №2110/16</p>
+                      <p class="create-white">создана 24.08.2021</p>
+                    </div>
+                  </div>
+                  <div class="arrow-img">
+                    <img src="/src/assets/img/realtor/forBanner/Стрелка.png" alt="" />
+                  </div>
+                </div>
+              </li>
+
+              <li class="scroll-card">
+                <div class="blue-card">
+                  <div class="title-blue">
+                    Сделка. <br />
+                    Продажа
+                  </div>
+                  <div class="advertisement">Этап: Подготовка к рекламе</div>
+                  <div class="apartment-size">2-к кв. 137 м2.</div>
+                  <div class="location">
+                    Санкт-Петербург, ул. Адмирала <br> Мишустина, д.365к6
+                  </div>
+                  <div class="realtor-info">
+                    <img src="/src/assets/img/realtor/forBanner/realtor.png" alt="" />
+                    <div class="name-realtor">
+                      <p>Ваш риэлтор</p>
+                      <span>Константинов К.К</span>
+                    </div>
+                  </div>
+                  <div class="order-info">
+                    <div class="detail-order">
+                      <p class="application">Заявка №2110/16</p>
+                      <p class="create">создана 24.08.2021</p>
+                    </div>
+                  </div>
+                  <div class="arrow-img">
+                    <img src="/src/assets/img/realtor/forBanner/Стрелка.png" alt="" />
+                  </div>
+                </div>
+              </li>
+
+              <li class="scroll-card">
+                <div class="white-card">
+                  <div class="title-white">
+                    Сделка. <br />
+                    Продажа
+                  </div>
+                  <div class="advertisement-white">Этап: Подготовка к рекламе</div>
+                  <div class="apartment-size-white">2-к кв. 137 м2.</div>
+                  <div class="location-white">
+                    Санкт-Петербург, ул. Адмирала <br> Мишустина, д.365к6
+                  </div>
+                  <div class="realtor-info-white">
+                    <img src="/src/assets/img/realtor/forBanner/realtor.png" alt="" />
+                    <div class="name-realtor-white">
+                      <p>Ваш риэлтор</p>
+                      <span>Константинов К.К</span>
+                    </div>
+                  </div>
+                  <div class="order-info-white">
+                    <div class="detail-order-white">
+                      <p class="application-white">Заявка №2110/16</p>
+                      <p class="create-white">создана 24.08.2021</p>
+                    </div>
+                  </div>
+                  <div class="arrow-img">
+                    <img src="/src/assets/img/realtor/forBanner/Стрелка.png" alt="" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        <div class="container-accordion">
+          <div class="box active">
+            Ещё в Архиве
+            <span>(2)</span>
+            <img src="/src/assets/img/realtor/Vector-arrow.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Working with a realtor end -->
+
+      <!-- Banner fish start -->
+      <section class="banner-fish">
+        <div class="container-fish">
+          <h3>Баннер рыба</h3>
+          <p>
+            агентство <br />
+            этажи
+          </p>
+          <span>Подпись рыба</span> <br />
+          <button type="button" class="fish-banner">CTA-кнопка</button>
+        </div>
+      </section>
+      <!-- Banner fish end -->
+
+      <!-- Realtor info start -->
+      <section class="about-realtor">
+        <div class="title-info">
+          <h2>О риэлторе</h2>
+          <img src="/src/assets/img/realtor/Фон формы .png" alt="" />
+          <p class="surname">Константинов</p>
+          <div class="name">
+            <p>Константин Константинович</p>
+          </div>
+          <div class="profession-realtor">
+            <p>Эксперт по загородной недвижимости</p>
+          </div>
+        </div>
+        <div class="main-info">
+          <div class="real-estate">
+            <img src="/src/assets/img/realtor/Булит Оранж стрелка.svg" alt="arrow-img" />
+            <div class="detail-info">
+              <h3>Специализация недвижимости</h3>
+              <ul>
+                <li>
+                  <img src="/src/assets/img/realtor/Булит синий круг.svg" alt="" />
+                  Коммуналки
+                </li>
+                <li>
+                  <img src="/src/assets/img/realtor/Булит синий круг.svg" alt="" /> Продажа
+                  элитной недвижимости
+                </li>
+                <li>
+                  <img src="/src/assets/img/realtor/Булит синий круг.svg" alt="" /> Дома
+                  премиум класса
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <div class="info-realtor">
+            <img src="/src/assets/img/realtor/Булит Оранж стрелка.svg" alt="arrow-img" />
+            <div class="info-detail">
+              <h3>О себе</h3>
+              <p>
+                Мне понравился данных объект, хотелось бы посмотреть его в
+                живую. Единственное не понятно по поводу лоджии. Выходит ли она
+                во внутренний или внешний двор. Мне понравился данных объект,
+                хотелось бы посмотреть его в живую. Единственное не понятно по
+                поводу лоджии. Выходит ли она во внутренний.
+              </p>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </section>
+      <!-- Realtor info end -->
+    </main>
+
+    <footer class="footer-distributed">
+      <div class="location-office">
+        <h3>
+          Адреса <br />
+          компании
+          <div class="map-container">
+            <div id="map_id" class="map"></div>
+            <p class="map_address">Санкт-Петербург г, ул Фурштатская, д. 28, литера А, помещ. 20-Н Р.М. №1</p>
+          </div>
+        </h3>
+        <div class="floors-sale">
+          <img src="/src/assets/img/realtor/Vector.png" alt="" />
+          <h4>ООО “Этажи. Офис продаж”</h4>
+          <p>Cанкт-Петербург, Большой проспект, П.С., дом 83 рыба рыба</p>
+          <a class="phone" href="tel:+79994544545">+7 (999) 454-45-45</a>
+          <a class="phone" href="tel:+79994544545">+7 (999) 454-45-45</a>
+          <a class="mail" href="mailto:">mail@mail.ru</a>
+        </div>
+        <div class="main-office">
+          <h4>ООО “Этажи” (Головной офис)</h4>
+          <p>Cанкт-Петербург, Большой проспект, П.С., дом 8</p>
+          <a class="phone" href="tel:+79994544545">+7 (999) 454-45-45</a>
+          <a class="phone" href="tel:+79994544545">+7 (999) 454-45-45</a>
+          <a class="phone" href="tel:+79994544545">+7 (999) 454-45-45</a>
+          <a class="phone" href="tel:+79994544545">+7 (999) 454-45-45</a>
+          <a class="mail" href="mailto:">mail@mail.ru</a>
+        </div>
+      </div>
+      <hr class="footer-line" />
+      <div class="footer-crm">
+        <img src="/src/assets/img/realtor/footer.svg" alt="" />
+        <p>© 2021 СRM система</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=541743d5-0be4-4a7b-85d7-0dc3f5c668fa&lang=ru_RU" type="text/javascript"></script>
+    <script src="/src/assets/js/main.js"></script>
+  </body>
+</html>

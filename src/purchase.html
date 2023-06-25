@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#124bf6" />
+    <title>Purchase</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/src/assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar__wrap">
+            <i class="fa-regular fa-bell" id="notify"></i>
+            <div class="logo">
+              <img src="/src/assets/img/Vector.svg" alt="">
+            </div>
+            <ul class="menu" id="menu">
+              <li><a href="#">Главная страница</a></li>
+              <li><a href="#">Риэлторы</a></li>
+              <li><a href="#">Компании</a></li>
+              <li><a href="#">Объекты</a></li>
+            </ul>
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="popup" id="popup"></div>
+    </header>
+
+    <main>
+      <section class="purchase-realtor">
+        <div class="purchase-working">
+          <div class="title-banner">Покупка</div>
+          <div class="button -yellowBunner center">Этап: Подготовка к рекламе</div>
+          <div class="apartment-size">Студия</div>
+          <div class="location">Санкт-Петербург</div>
+          <div class="realtor-info">
+            <img src="/src/assets/img/purchase/realtor.png" alt="" />
+            <div class="name-realtor">
+              <p>Ваш риэлтор</p>
+              <span>Константинов К.К</span>
+            </div>
+          </div>
+          <div class="order-info">
+            <div class="detail-order">
+              <p>Заявка №2110/16</p>
+              <p>создана 24.08.2021</p>
+            </div>
+          </div>
+          <div class="img-working">
+            <img src="/src/assets/img/purchase/Стрелка.svg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="application-result">
+        <div class="container-application">
+          <div class="title-container">
+            Результаты <br />
+            заявки
+          </div>
+          <div class="scroll-application">
+            <ul>
+              <li class="scroll">
+                <div class="application-slider">
+                  <img src="/src/assets/img/purchase/Иконка В Сделке.svg" alt="viewing" />
+                  <div class="subtitle-container">
+                    <p>Просмотры объектов</p>
+                    <span>12</span>
+                  </div>
+                </div>
+              </li>
+              <li class="scroll">
+                <div class="application-slider">
+                  <img
+                    src="/src/assets/img/purchase/Иконка Лет на рынке.svg"
+                    alt="viewing"
+                  />
+                  <div class="subtitle-container">
+                    <p>Просмотры объектов</p>
+                    <span>12</span>
+                  </div>
+                </div>
+              </li>
+              <li class="scroll">
+                <div class="application-slider">
+                  <img src="/src/assets/img/purchase/Иконка В Сделке.svg" alt="viewing" />
+                  <div class="subtitle-container">
+                    <p>Просмотры объектов</p>
+                    <span>12</span>
+                  </div>
+                </div>
+              </li>
+              <li class="scroll">
+                <div class="application-slider">
+                  <img
+                    src="/src/assets/img/purchase/Иконка Лет на рынке.svg"
+                    alt="viewing"
+                  />
+                  <div class="subtitle-container">
+                    <p>Просмотры объектов</p>
+                    <span>12</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="compilation">
+        <div class="container-compilation">
+          <div class="title-compilation">
+            Риэлтор <br />
+            подобрал для вас <br />
+            объекты
+          </div>
+          <div class="container-card">
+            <div class="content-compilation">
+                <div class="left-compilation">
+                    <img src="/src/assets/img/purchase/Стрелка.png" alt="" />
+                  </div>
+                  <div class="right-compilation">
+                    <div class="selected-object">
+                      <img src="/src/assets/img/purchase/Булит зеленый треугольник.svg" alt="" />
+                      <div class="info-selected">
+                        <p>Подобранных объектов</p>
+                        <span>6345</span>
+                      </div>
+                    </div>
+                    <div class="no-rating">
+                      <img src="/src/assets/img/purchase/error.svg" alt="" />
+                      <div class="info-rating">
+                        <p>Не поставили оценку</p>
+                        <span>6345</span>
+                      </div>
+                    </div>
+                    <div class="button-card">
+                        <div class="button-compilation -white center">
+                            Смотреть подборку
+                          </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="object-displays">
+        <div class="displays-object">
+          <div class="container-displays">
+            <div class="title-displays">
+              <p>ваши просмотры объектов  <span>+2 новых</span></p>
+            </div>
+            <div class="akkord">
+              <div class="container-date">
+                <div class="left-date">
+                  <img class="timeDate" src="/src/assets/img/purchase/Time.svg" alt="">
+                  <p>09 дек. 18:00</p>
+                  <img class="errorDate" src="/src/assets/img/purchase/errorYellow.svg" alt="">
+                </div>
+                  <img src="/src/assets/img/purchase/Frame.svg" alt="">
+              </div>
+              <div class="container-showing">
+                <div class="title-showing">
+                  <p>Просмотр состоится <br>
+                    01.03 Вторник, 17:25</p>
+                </div>
+                <div class="necessity">
+                  <img src="/src/assets/img/purchase/error.svg" alt="">
+                  <p>Необходимо оставить обратную связь</p>
+                </div>
+                <div class="button-showing">
+                  <div class="button-cost -white center">Отменить показ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-distributed">
+      <div class="footer-crm">
+        <img src="/src/assets/img/purchase/footer.svg" alt="" />
+        <p>© 2021 СRM система</p>
+      </div>
+    </footer>
+
+    <script src="/src/assets/js/main.js"></script>
+  </body>
+</html>

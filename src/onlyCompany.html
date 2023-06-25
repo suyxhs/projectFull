@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#124bf6" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/src/assets/css/main.css" />
+    <title>Only Company</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar__wrap">
+            <div class="logo">
+              <img src="/src/assets/img/Vector.svg" alt="" />
+            </div>
+            <ul class="menu" id="menu">
+              <li><a href="#">Главная страница</a></li>
+              <li><a href="#">Риэлторы</a></li>
+              <li><a href="#">Компании</a></li>
+              <li><a href="#">Объекты</a></li>
+            </ul>
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="popup" id="popup"></div>
+    </header>
+
+    <main>
+      <section class="search">
+        <div class="box-search">
+          <img src="/src/assets/img/onlyCompany/search/Iconsearch.svg" alt="" />
+          <input type="text" name="" placeholder="Москва и облость" />
+          <img src="/src/assets/img/onlyCompany/search/Фильтр.svg" alt="" />
+        </div>
+      </section>
+
+      <section class="company-card">
+        <div class="title-company">
+            компании в сделке (345)
+        </div>
+
+        <div class="card-company">
+            <div class="content-card">
+              <div class="left-card">
+                <img src="/src/assets/img/onlyCompany/firstContainer/logo.png" alt="" />
+              </div>
+              <div class="right-card">
+                <h3>Квадратный метр площади..</h3>
+                <p class="location-company">Санкт-Петербург</p>
+                <p class="object"><span>345</span> объектов</p>
+                <p class="realtors"><span>845</span> риэлторов</p>
+                <div class="rating-company">
+                  <p>5.0</p>
+                  <div class="stars" data-stars="5">
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="1"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="2"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="3"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="4"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="5"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-company">
+            <div class="content-card">
+              <div class="left-card">
+                <img src="/src/assets/img/onlyCompany/firstContainer/logo.png" alt="" />
+              </div>
+              <div class="right-card">
+                <h3>Квадратный метр площади..</h3>
+                <p class="location-company">Санкт-Петербург</p>
+                <p class="object"><span>345</span> объектов</p>
+                <p class="realtors"><span>845</span> риэлторов</p>
+                <div class="rating-company">
+                  <p>5.0</p>
+                  <div class="stars" data-stars="5">
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="1"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="2"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="3"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="4"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="5"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-company">
+            <div class="content-card">
+              <div class="left-card">
+                <img src="/src/assets/img/onlyCompany/firstContainer/logo.png" alt="" />
+              </div>
+              <div class="right-card">
+                <h3>Квадратный метр площади..</h3>
+                <p class="location-company">Санкт-Петербург</p>
+                <p class="object"><span>345</span> объектов</p>
+                <p class="realtors"><span>845</span> риэлторов</p>
+                <div class="rating-company">
+                  <p>5.0</p>
+                  <div class="stars" data-stars="5">
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="1"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="2"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="3"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="4"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="5"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-company">
+            <div class="content-card">
+              <div class="left-card">
+                <img src="/src/assets/img/onlyCompany/firstContainer/logo.png" alt="" />
+              </div>
+              <div class="right-card">
+                <h3>Квадратный метр площади..</h3>
+                <p class="location-company">Санкт-Петербург</p>
+                <p class="object"><span>345</span> объектов</p>
+                <p class="realtors"><span>845</span> риэлторов</p>
+                <div class="rating-company">
+                  <p>5.0</p>
+                  <div class="stars" data-stars="5">
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="1"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="2"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="3"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="4"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="5"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-company">
+            <div class="content-card">
+              <div class="left-card">
+                <img src="/src/assets/img/onlyCompany/firstContainer/logo.png" alt="" />
+              </div>
+              <div class="right-card">
+                <h3>Квадратный метр площади..</h3>
+                <p class="location-company">Санкт-Петербург</p>
+                <p class="object"><span>345</span> объектов</p>
+                <p class="realtors"><span>845</span> риэлторов</p>
+                <div class="rating-company">
+                  <p>5.0</p>
+                  <div class="stars" data-stars="5">
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="1"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="2"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="3"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="4"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="5"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-company">
+            <div class="content-card">
+              <div class="left-card">
+                <img src="/src/assets/img/onlyCompany/firstContainer/logo.png" alt="" />
+              </div>
+              <div class="right-card">
+                <h3>Квадратный метр площади..</h3>
+                <p class="location-company">Санкт-Петербург</p>
+                <p class="object"><span>345</span> объектов</p>
+                <p class="realtors"><span>845</span> риэлторов</p>
+                <div class="rating-company">
+                  <p>5.0</p>
+                  <div class="stars" data-stars="5">
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="1"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="2"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="3"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="4"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="5"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-company">
+            <div class="content-card">
+              <div class="left-card">
+                <img src="/src/assets/img/onlyCompany/firstContainer/logo.png" alt="" />
+              </div>
+              <div class="right-card">
+                <h3>Квадратный метр площади..</h3>
+                <p class="location-company">Санкт-Петербург</p>
+                <p class="object"><span>345</span> объектов</p>
+                <p class="realtors"><span>845</span> риэлторов</p>
+                <div class="rating-company">
+                  <p>5.0</p>
+                  <div class="stars" data-stars="5">
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="1"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="2"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="3"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="4"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="5"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-company">
+            <div class="content-card">
+              <div class="left-card">
+                <img src="/src/assets/img/onlyCompany/firstContainer/logo.png" alt="" />
+              </div>
+              <div class="right-card">
+                <h3>Квадратный метр площади..</h3>
+                <p class="location-company">Санкт-Петербург</p>
+                <p class="object"><span>345</span> объектов</p>
+                <p class="realtors"><span>845</span> риэлторов</p>
+                <div class="rating-company">
+                  <p>5.0</p>
+                  <div class="stars" data-stars="5">
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="1"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="2"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="3"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="4"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                    <svg
+                      height="25"
+                      width="23"
+                      class="star rating"
+                      data-rating="5"
+                    >
+                      <path
+                        d="M16 5.91667L16.8333 6.75L13.0833 10.5L13.9167 15.5L9.33333 13.2083L5.16667 15.5L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167L16 5.91667Z"
+                        fill="#3A3A3B"
+                      />
+                      <path
+                        d="M11.2083 5.29167L16 5.91667L12.25 9.66667L13.0833 14.6667L8.5 12.375L3.91667 14.6667L4.75 9.66667L1 5.91667L6.20833 5.29167L8.5 0.5L11.2083 5.29167Z"
+                        fill="#9FF612"
+                        stroke="#3A3A3B"
+                        stroke-width="0.5"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <ul>
+              <li class="prev"><a href="#"> <img src="/src/assets/img/onlyCompany/pagination/bytesize_plus0.svg" alt=""> </a></li>
+              <li class="page active"><a href="#">1</a></li>
+              <li class="page"><a href="#">2</a></li>
+              <li class="page last"><a href="#">23</a></li>
+              <li class="page"><a href="#">24</a></li>
+              <li class="next"><a href="#"> <img src="/src/assets/img/onlyCompany/pagination/bytesize_plus.svg" alt=""> </a></li>
+            </ul>
+          </div>
+      </section>
+
+      <section class="company-map">
+        <div class="title-map">
+            компании на карте
+        </div>
+        <div class="content-map">
+            <h3>/* ТУТ БУДЕТ КАРТА */</h3>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-distributed">
+      <div class="footer-crm">
+        <img src="/src/assets/img/onlyCompany/footer/footer.svg" alt="" />
+        <p>© 2021 СRM система</p>
+      </div>
+    </footer>
+    <script src="/src/assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,610 @@
+.working-realtor {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.blue-card {
+  width: 335px;
+  height: 445px;
+  background: #124bf6;
+  border-radius: 16px;
+  padding: 30px;
+  margin-right: 10px;
+}
+
+.white-card {
+  width: 335px;
+  height: 445px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #dadadb;
+  padding: 30px;
+  margin-right: 10px;
+}
+
+.title-blue {
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "Mulish";
+  font-weight: 900;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.title-white {
+  color: #000;
+  margin-bottom: 10px;
+  font-family: "Mulish";
+  font-weight: 900;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.advertisement {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.advertisement-white {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.apartment-size {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.apartment-size-white {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.location {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.location-white {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.realtor-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+.realtor-info-white {
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+.realtor-info img {
+  margin-right: 10px;
+}
+
+.realtor-info .name-realtor p {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  color: #fff;
+}
+
+.realtor-info-white .name-realtor-white p {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  color: #000;
+}
+
+.realtor-info .name-realtor span {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.realtor-info-white .name-realtor-white span {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+}
+
+.detail-order {
+  display: flex;
+}
+
+.detail-order-white {
+  display: flex;
+}
+
+.detail-order .application {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  margin-right: 12px;
+  color: #fff;
+}
+
+.detail-order-white .application-white {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  margin-right: 12px;
+  color: #000;
+}
+
+.detail-order .create {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+}
+
+.detail-order-white .create-white {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000;
+}
+
+.working-realtor .section-title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #3a3a3b;
+  margin-bottom: 30px;
+}
+
+.arrow-img {
+  position: relative;
+  bottom: 420px;
+  right: 17px;
+  color: #fff;
+  margin-left: 22%;
+  text-transform: uppercase;
+}
+
+.working-scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 450px;
+}
+
+.working-scroll .scroll-card {
+  display: inline-block;
+}
+
+.working-scroll ul {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ABOUT REALTOR */
+
+.about-realtor {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-realtor .title-info h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #3a3a3b;
+  font-family: "Mulish";
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.about-realtor .title-info .surname {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #3a3a3b;
+  margin-top: 18px;
+}
+
+.about-realtor .title-info .name p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #3a3a3b;
+  margin-top: 3px;
+}
+
+.about-realtor .title-info .profession-realtor p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+.about-realtor .main-info {
+  width: 100%;
+  padding: 20px;
+}
+
+.about-realtor .main-info .real-estate {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-realtor .main-info .real-estate .detail-info h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.about-realtor .main-info .real-estate img {
+  margin-right: 15px;
+}
+
+.about-realtor .main-info .real-estate .detail-info ul li {
+  font-size: 14px;
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-realtor .main-info .info-realtor {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.about-realtor .main-info .info-realtor img {
+  margin-right: 15px;
+}
+
+.about-realtor .main-info .info-detail h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+.about-realtor .main-info .info-detail p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* MAP */
+
+.map {
+  width: 335px;
+  height: 300px;
+  z-index: -1;
+  border-radius: 32px;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.map-container {
+  height: 370px;
+  background-color: #9ff612;
+  border-radius: 32px;
+  transform: translate3d(0, 0, 0);
+}
+
+.map_address {
+  width: 295px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #3a3a3b;
+  text-transform: capitalize;
+}
+
+.location-office .map {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(100%);
+}
+
+/* REALTOR CARD */
+
+.container-realtor {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 1px solid #dadadb;
+  border-radius: 16px;
+  height: 190px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #ffffff;
+}
+
+.bar-line__right {
+  flex: 1;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.bar-line__right-text_01 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #3a3a3b;
+  margin-bottom: 5px;
+}
+
+.bar-line__right-text_02 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3a3a3b;
+  margin-bottom: 10px;
+}
+
+.bar-line__right-text_03 {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--gray);
+  margin-bottom: 10px;
+}
+
+.bar-line__right-text_04 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.bar-line__right-text_05 {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--blue);
+}
+
+/* DETAIL ABOUT REALTOR */
+
+.container-about {
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid #dadadb;
+  border-radius: 16px;
+  background: #ffffff;
+  object-fit: contain;
+}
+
+.detail {
+  width: 100%;
+  padding: 10px;
+}
+
+.detail p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.detail a {
+  display: flex;
+  align-items: center;
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.detail a img {
+  margin-left: 10px;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 273px;
+  height: 40px;
+  margin: 5px;
+}
+
+.message {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #3a3a3b;
+  background-color: #ffffff;
+  border: 2px solid var(--black);
+  border-width: 1px 3px 3px 1px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.call {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--blue);
+  border: 2px solid var(--black);
+  border-width: 1px 3px 3px 1px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .button {
+    display: flex;
+    overflow: hidden;
+    margin: 3px;
+    padding: 5px 12px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 150ms linear;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    text-transform: none;
+    color: #fff;
+    border: 0 none;
+    border-radius: var(--borderRadius);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.3;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    &:hover {
+      transition: all 150ms linear;
+  
+      opacity: 0.85;
+    }
+  
+    &:active {
+      transition: all 150ms linear;
+      opacity: 0.75;
+    }
+  
+    &:focus {
+      outline: 1px dotted #959595;
+      outline-offset: -4px;
+    }
+  }
+  
+  .button.-purpleRealtor {
+    background: var(--purple);
+    border: 2px solid var(--blue);
+    border-width: 1px 3px 3px 1px;
+  }
+  
+  .button.-purpleRealtor p {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .button.-yellow {
+    color: black;
+    background: var(--yellow);
+    border: 2px solid var(--red);
+    border-width: 1px 3px 3px 1px;
+  
+    &:focus {
+      outline: 100px dotted black;
+      outline-offset: -4px;
+    }
+  }
+  
+  .button.-black {
+    background: var(--black);
+    border: 2px solid var(--pink);
+    border-width: 1px 3px 3px 1px;
+  }
+
+  /* AWARDS */
+
+  .awards {
+    padding: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  
+  .awards ul {
+    width: 100%;
+    border-radius: 30px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .awards ul::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  .awards ul li {
+    margin: 0 3px;
+    padding-top: 5%;
+    cursor: pointer;
+  }
+  
+  .awards .scroll {
+    display: inline-block;
+  }
+  
+  .awards p {
+    font-size: 15px;
+    color: var(--gray);
+  }
+  
+  

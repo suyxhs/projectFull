@@ -1,0 +1,869 @@
+.more-info {
+  color: #000;
+  background-color: var(--star-color);
+  border: 2px solid var(--black);
+  border-width: 1px 3px 3px 1px;
+  border-radius: 5px;
+  text-align: center;
+  width: 147px;
+}
+
+.container-line {
+  height: 77px;
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/img/Шум.png);
+  background-color: var(--blue);
+  background-size: 50%;
+  transform: skew(0, -3deg);
+  margin-top: 24px;
+}
+
+.container-line p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  color: #fff;
+  margin-left: 5px;
+  text-transform: uppercase;
+}
+
+.ticker {
+  position: relative;
+  overflow: hidden;
+}
+
+.ticker__wrapper {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.ticker__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  flex-shrink: 0;
+  padding: 0 50px;
+  animation: ticker 5s linear infinite;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.container-showcase {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1px;
+  padding: 20px;
+}
+
+.title-showcase {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  color: #3a3a3b;
+}
+
+.title-showcase span {
+  color: #9c9c9c;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  visibility: hidden;
+}
+
+.layout-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 182px;
+  padding: 10px 0;
+  border-radius: 100px;
+  background: #e8edff;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+input[type="radio"]:checked + label {
+  background: var(--blue);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.checked-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*scroll apart*/
+
+.container-slider {
+  margin: 0 auto;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  object-fit: contain;
+  width: 335px;
+  height: 445px;
+  margin-bottom: 24px;
+  margin-left: 20px;
+}
+
+.scroll-list {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scroll-list .scroll {
+  display: inline-block;
+}
+
+.subtitle-container {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.subtitle-container h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #3a3a3b;
+  margin-bottom: 10px;
+}
+
+.subtitle-container span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3a3b;
+}
+
+.price-apart {
+  display: flex;
+  align-items: first baseline;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.price-apart img {
+  margin-right: 10px;
+}
+
+.price h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #3a3a3b;
+  margin-bottom: 5px;
+}
+
+.price span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #767676;
+}
+
+.more-object img {
+  position: relative;
+  width: 330px;
+}
+
+.more-info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 230px;
+  left: 50px;
+  transform: matrix(0.98, -0.17, 0.17, 0.98, 0, 0);
+}
+
+.more-info a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3a3b;
+}
+
+.title-work {
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 4%;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.title-work p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  color: #3a3a3b;
+  text-transform: uppercase;
+}
+
+.container-working {
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 335px;
+  height: 445px;
+  margin-top: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  object-fit: contain;
+}
+
+.container-working .title-banner {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  color: #3a3a3b;
+  margin-top: 39px;
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+
+.container-working .apartment-size {
+  font-size: 24px;
+  font-weight: 700;
+  color: #3a3a3b;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.container-working .location {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3a3b;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.container-working .realtor-info {
+  display: flex;
+  align-items: center;
+  margin-top: 27px;
+  margin-left: 30px;
+}
+
+.container-working .realtor-info img {
+  margin-right: 3%;
+}
+
+.container-working .realtor-info .name-realtor p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3a3b;
+  margin-bottom: 5px;
+}
+
+.container-working .realtor-info .name-realtor span {
+  font-size: 18px;
+  font-weight: 800;
+  color: #3a3a3b;
+}
+
+.container-working .order-info .detail-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  margin-left: 30px;
+  width: 70%;
+}
+
+.detail-order p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #3a3a3b;
+}
+
+.detail-order .order {
+  margin-right: 12px;
+}
+
+/* BUTTON STYLE */
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: flex;
+  overflow: hidden;
+  margin: 3px;
+  padding: 5px 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 150ms linear;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none !important;
+  text-transform: none;
+  color: #fff;
+  border: 0 none;
+  border-radius: var(--borderRadius);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:hover {
+    transition: all 150ms linear;
+
+    opacity: 0.85;
+  }
+
+  &:active {
+    transition: all 150ms linear;
+    opacity: 0.75;
+  }
+
+  &:focus {
+    outline: 1px dotted #959595;
+    outline-offset: -4px;
+  }
+}
+
+.button.-purple {
+  margin: 0;
+  margin-left: 30px;
+  width: 223px;
+  margin-top: 15px;
+  background: var(--yellow);
+  color: #3a3a3b;
+  border: 2px solid #f86247;
+  border-width: 1px 3px 3px 1px;
+}
+
+.archive {
+  margin-left: 20px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.archive p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #3a3a3b;
+}
+
+.archive span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #9c9c9c;
+  margin-right: 10px;
+}
+
+.container-fish {
+  background-image: url(/src/assets/img/companyPage/Union.png);
+  height: 316px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.container-fish h3 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.container-fish p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  color: #848484;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.container-fish span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.fish-banner {
+  margin-top: 30px;
+  color: #3a3a3b;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  border: 2px solid #848484;
+  border-width: 1px 3px 3px 1px;
+  border-radius: 5px;
+  text-align: center;
+  width: 130px;
+}
+
+.about-company {
+  width: 100%;
+  padding: 20px;
+}
+
+.about-company .img-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  background: #fff;
+  border: 1px solid #dadadb;
+}
+
+.info-company h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #3a3a3b;
+  margin-top: 20px;
+}
+
+.info-company p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3a3a3b;
+}
+
+.about-company .title-about {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #3a3a3b;
+  line-height: 36px;
+}
+
+.about-company .title-about .surname {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #3a3a3b;
+  margin-top: 18px;
+}
+
+.about-company .title-about .name p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #3a3a3b;
+  margin-top: 3px;
+}
+
+.about-company .title-about .profession-realtor p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+.about-company .main-info {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.about-company .main-info .real-estate {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-company .main-info .real-estate .detail-info h3 {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 18px;
+}
+
+.about-company .main-info .real-estate img {
+  margin-right: 15px;
+}
+
+.about-company .main-info .real-estate .detail-info ul li {
+  font-size: 14px;
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-company .main-info .info-realtor {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.about-company .main-info .info-realtor img {
+  margin-right: 15px;
+}
+
+.about-company .main-info .info-detail h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+.about-company .main-info .info-detail p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.about-company .main-info .requisites-detail h3 {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+.about-company .main-info .requisites-detail p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.requisites-company {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.requisites-company img {
+  margin-right: 15px;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  float: right;
+}
+
+.download p a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3a3a3b;
+}
+
+.title-staff {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  color: #3a3a3b;
+  text-transform: uppercase;
+}
+
+.container-staff {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border: 1px solid #dadadb;
+  border-radius: 16px;
+  height: 190px;
+}
+
+.rating-staff {
+  display: flex;
+}
+
+.rating-staff p {
+  font-size: 14px;
+  font-weight: 800;
+  color: #3a3a3b;
+  margin-right: 10px;
+}
+
+.name-comp {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--blue);
+  margin-top: 13px;
+}
+
+.right-staff {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.name-staff h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #3a3a3b;
+  margin-bottom: 5px;
+}
+
+.name-staff p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3a3a3b;
+  margin-bottom: 10px;
+}
+
+.prof-staff {
+  font-size: 12px;
+  font-weight: 400;
+  color: #9c9c9c;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  width: 251px;
+  height: 52px;
+  position: relative;
+  margin-top: 23px;
+  margin-bottom: 25px;
+}
+
+.select {
+  background: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #dadadb;
+  border-radius: 10px;
+}
+
+.caret {
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.menu-time {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: #fff;
+  border: 1px #dadadb solid;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  color: #9fa5b5;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 275px;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.menu-time li {
+  padding: 5px;
+  text-align: center;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.menu-time li:hover {
+  background: #2a2d35;
+}
+
+.active {
+  color: var(--blue);
+}
+
+.menu-open {
+  display: block;
+  opacity: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 15px;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: var(--blue);
+  z-index: 10;
+}
+
+.logo {
+  position: relative;
+  padding: 25px;
+}
+
+.navbar__wrap i {
+  position: relative;
+  padding: 25px;
+  font-size: 1.5rem;
+}
+
+.navbar__wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hamb {
+  display: none;
+}
+
+.popup {
+  display: none;
+}
+
+.logo img {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.menu > li > a {
+  text-decoration: none;
+}
+
+.navbar__wrap .menu {
+  display: flex;
+}
+
+.navbar__wrap .menu > li {
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar__wrap .menu > li > a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar__wrap .menu > li > a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 1000px) {
+  .navbar__wrap .menu {
+    display: none;
+  }
+
+  .hamb {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamb__field {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #fff;
+    transition: 0.2s;
+  }
+
+  .popup {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+
+  .popup.open {
+    left: 0;
+  }
+
+  .popup .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 100px 0;
+    overflow: auto;
+  }
+
+  .popup .menu > li {
+    width: 100%;
+  }
+
+  .popup .menu > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3f3f3f;
+  }
+
+  .popup .menu > li > a:hover {
+    background-color: rgba(122, 82, 179, 0.1);
+    color: #124bf6;
+  }
+
+  .hamb__field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamb__field.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamb__field.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  body.noscroll {
+    overflow: hidden;
+  }
+}
